@@ -29,14 +29,12 @@ Model Filler will basically split any object to 3 type :
 - Java Bean (POJO)
 
 ### Collection Based Object
-----
 For all collection based object, model filler will generate using default object, then fill using generic value registered to that collection. For example List<String> list -> will be filled as Arraylist with one String inside the list.
 - java.util.List -- default to java.util.ArrayList
 - java.util.Map -- default to java.util.HashMap
 - java.util.Set -- default to java.util.HashSet
 
 ### Value Based Object
-----
 For all field that are having direct value (primitive)
 - int and Integer -- default to 1
 - double and Double -- default to 1
@@ -51,5 +49,4 @@ For all field that are having direct value (primitive)
 - java.lang.BigDecimal -- default to 1
 
 ### Java Bean
-----
 Other than collection based and value based, will try to recursively fill all fields inside this class.
