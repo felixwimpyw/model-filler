@@ -23,7 +23,7 @@ YourBean bean = filler.initiate(YourBean.class);
 
 Support
 =====
-Model Filler will basically split any object to 3 type :
+Model Filler will basically assign any object to 1 from below 3 type :
 - Collection Based Object
 - Value Based Object
 - Java Bean (POJO)
@@ -49,4 +49,4 @@ For all field that are having direct value (primitive)
 - java.lang.BigDecimal -- default to 1
 
 ### Java Bean
-Other than collection based and value based, will try to recursively fill all fields inside this class.
+Other than collection based and value based, will try to recursively fill all fields inside this class. If failed, then the default is null.
