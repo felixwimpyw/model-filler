@@ -23,6 +23,10 @@ public class ModelFiller {
     this.classInitiator = new ClassInitiator(this);
   }
 
+  public Object initiate(Class<?> classObject) throws Exception {
+    return initiate(classObject, null);
+  }
+  
   public Object initiate(Class<?> classObject, Type type) throws Exception {
     if (List.class.isAssignableFrom(classObject)) {
       return classInitiator.initList(type);
